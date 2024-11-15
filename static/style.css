@@ -1,0 +1,103 @@
+/* static/style.css */
+
+
+body {
+    font-family: Arial, sans-serif;
+    
+    
+    width: 60%;
+    margin: auto;
+    border: 1px solid rgb(198, 198, 198);
+    font-size: 20px;
+}
+
+
+
+body *{
+    margin: 0px;
+}
+
+h1 {
+    color: #333;
+    text-align: center; /* Center the text */
+}
+
+form {
+    margin-top: 20px;
+    text-align: center; /* Center the form !!!!!!!!!!! delete it to make btn left-side*/ 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    padding: 10px;
+    width: 98%;
+    font-size: 20px;
+    border: 1px solid rgb(198, 198, 198);
+    max-width: 98%;
+    min-height: 98%;
+}
+
+input[type="submit"] {
+    margin: 20px 0px 20px 0px;
+    background-color: #4073c6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #4550a0;
+}
+#urlUplBtn:hover{
+    background-color: #4550a0;
+}
+#urlUplBtn{
+    margin: 10px 0px 10px 0px;
+    background-color: #4073c6;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+div {
+    padding: 10px;
+    border-radius: 5px;
+}
+.res{
+    background-color: white;
+}
+.container{
+    background-color: rgb(239, 239, 239);
+    padding: 20px;
+    height: 100vh;
+}
+
+.continputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.translation-container, .input-container {
+    width: 50%; /* Double the width of input-container */
+}

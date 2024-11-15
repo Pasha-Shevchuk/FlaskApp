@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Іntellectual analysis of the reliability of text messages</h1>
+        <form method="post" action="/">
+            <div class="url-container">
+                <label for="urlRef">Upload text from url</label>
+                <textarea id="urlRef" name="urlRef" rows="1"></textarea>
+                <button id="urlUplBtn">UPLOAD</button>
+            </div>
+            <div class="continputs">
+                <div class="input-container">
+                    <label for="news">Text for analysis (Language: {{ input_lang }}):</label>
+                    <textarea id="news" name="news" rows="10" required>{{ request.form['news'] }}</textarea>
+                </div>
+                <div class="translation-container">
+                    <label for="translation">Translation to English:</label>
+                    <textarea id="translation" name="translation" rows="10" readonly>{{ translation }}</textarea>
+                </div>
+            </div>
+            <input type="submit" value="reliability analysis" id="btn">
+        </form>
+        <div class="res">
+            {% if result %}
+                <p>{{ result | safe }}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+
+</html>
